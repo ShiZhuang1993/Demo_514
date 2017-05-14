@@ -99,15 +99,19 @@ public class MyView extends View {
     private void drawTBCirle(Canvas canvas) {
         //画上面的白中圆
         mPaint.setColor(Color.WHITE);
+        mPaint.setStrokeWidth(10);
         canvas.drawCircle(XR, YR - R / 2, R / 2, mPaint);
         //画上面的黑小圆
         mPaint.setColor(Color.BLACK);
+        mPaint.setStrokeWidth(10);
         canvas.drawCircle(XR, YR - R / 2, R / 6, mPaint);
         //画下面的黑中圆
         mPaint.setColor(Color.BLACK);
+        mPaint.setStrokeWidth(10);
         canvas.drawCircle(XR, YR + R / 2, R / 2, mPaint);
         //画下面的白小圆
         mPaint.setColor(Color.WHITE);
+        mPaint.setStrokeWidth(10);
         canvas.drawCircle(XR, YR + R / 2, R / 6, mPaint);
     }
 
